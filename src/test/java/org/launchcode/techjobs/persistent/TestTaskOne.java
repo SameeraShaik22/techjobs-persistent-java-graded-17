@@ -25,7 +25,7 @@ public class TestTaskOne extends AbstractTest{
         boolean urlFound = urlMatcher.find();
         assertTrue(urlFound, "Database connection URL not found or is incorrect");
 
-        Pattern usernamePattern = Pattern.compile("spring.datasource.username=techjobs");
+        Pattern usernamePattern = Pattern.compile("spring.datasource.username=tech2");
         Matcher usernameMatcher= usernamePattern.matcher(propsFileContents);
         boolean usernameFound = usernameMatcher.find();
         assertTrue(usernameFound, "Database username not found or is incorrect");
